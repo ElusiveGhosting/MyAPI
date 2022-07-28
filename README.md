@@ -1,20 +1,20 @@
 # MyAPI using Chalice
 
-1. Configure AWS credentials ( Needed to deploy the API => API Gateway + Lambda )
+1. Configure AWS credentials : ( Needed to deploy the API => API Gateway + Lambda )
    
-   $ mkdir ~/.aws
-   $ cat >> ~/.aws/config
-     [default]
-     aws_access_key_id=YOUR_ACCESS_KEY_HERE
-     aws_secret_access_key=YOUR_SECRET_ACCESS_KEY
+		   $ mkdir ~/.aws
+		   $ cat >> ~/.aws/config
+			 [default]
+			 aws_access_key_id=YOUR_ACCESS_KEY_HERE
+			 aws_secret_access_key=YOUR_SECRET_ACCESS_KEY
 
 2. Clone the repository
    
-   $ git clone https://github.com/ElusiveGhosting/MyAPI.git
+           $ git clone https://github.com/ElusiveGhosting/MyAPI.git
  
 3. Change in the code directory
    
-   $ cd MYAPI
+           $ cd MYAPI
    
 4. Deployment
 
@@ -42,5 +42,5 @@
 		  
 6. Delete deployment from AWS( stop charges to Credit card )
 
-    $ chalice delete
+          $ chalice delete
 
