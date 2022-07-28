@@ -36,9 +36,14 @@ class Students(Resource):
             return {"error":"empty"},404
         return students ,200
 
+class Hello(Resource):
+    def get(self):
+        return {"hello":"World"} ,200
+
 
 api.add_resource(Student,'/student/<string:name>')
 api.add_resource(Students,'/students')
+api.add_resource(Hello,'/')
 
 
 app.run(port=5000, debug=True)
